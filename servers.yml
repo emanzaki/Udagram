@@ -57,13 +57,14 @@ Resources:
         Fn::Base64: !Sub |
         
           #!/bin/bash
-          sudo apt-get update -y
-          sudo apt-get install apache2 -y
-          sudo systemctl start apache2.service
+          apt-get update -y
+          apt-get install apache2 -y
+          systemctl start apache2.service
+          systemctl enable apache2.service
           cd /var/www/html
           echo "it works! Udagram" > index.html          
       # AMI ID of Ubuntu Linux machine. (us-east-1)
-      ImageId: ami-00a0e0b890ae17d65
+      ImageId: ami-072d6c9fae3253f26
       KeyName: Udagram
       SecurityGroups:
       - Ref: WebServerSecGroup
