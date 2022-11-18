@@ -102,8 +102,8 @@ Resources:
     Properties:
       DefaultActions:
       - Type: forward
-        TargetGroupArn: !Ref: WebAppTargetGroup
-      LoadBalancerArn: !Ref: WebAppLB
+        TargetGroupArn: !Ref WebAppTargetGroup
+      LoadBalancerArn: !Ref WebAppLB
       Port: '80'
       Protocol: HTTP
   ALBListenerRule:
