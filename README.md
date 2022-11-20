@@ -9,3 +9,4 @@
 - [Shell Script] to uplode/update/delete the Stacks.
 
 - [Diagram] 
+<img src="https://raw.githubusercontent.com/emanzaki/Udagram/master/diagram.png" alt="Diagram">
